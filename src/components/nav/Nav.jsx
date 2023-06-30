@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 
 const links = [
@@ -40,11 +42,24 @@ function mapLinks(links) {
     </Link>
   ));
 }
+
 const Nav = () => {
   return (
-    <div className="flex">
-      <Link href="/" className="mr-auto">Rovr</Link>
-      <div>{mapLinks(links)}</div>
+    <div className="flex justify-between items-center h-24">
+      <Link href="/" className="mr-auto font-bold text-xl">
+        Rovr
+      </Link>
+      <div className="links">
+        <div className="links">
+          {mapLinks(links)}
+        </div>
+        <button
+          className="p-1 border-none text-white bg-primary-green rounded-[0.19rem]"
+          onClick={() => {}}
+        >
+          Logout
+        </button>
+      </div>
     </div>
   );
 };
