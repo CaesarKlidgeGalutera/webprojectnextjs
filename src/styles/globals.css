@@ -25,6 +25,10 @@
   .links {
     @apply flex justify-between gap-5 items-center;
   }
+
+  .primary_btn {
+    @apply p-1 border-none text-white bg-primary-green rounded-[0.19rem];
+  }
 }
 
 @layer utilities {

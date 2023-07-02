@@ -54,7 +54,7 @@ const Nav = () => {
           {mapLinks(links)}
         </div>
         <button
-          className="p-1 border-none text-white bg-primary-green rounded-[0.19rem]"
+          className="primary_btn"
           onClick={() => {}}
         >
           Logout
