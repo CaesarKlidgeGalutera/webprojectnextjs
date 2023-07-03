@@ -12,14 +12,14 @@ export default function Home() {
           Turning your idea into Reality. We bring together the teams from the
           global tech industry.
         </p>
-        <button className="text-lg cursor-pointer bg-primary-green border-none rounded w-max p-5 text-white">
+        <button className="text-lg cursor-pointer bg-primary-green border-none rounded w-max p-3 text-white">
           See Our Works
         </button>
       </div>
       <Image
         src={Hero}
         alt="Hero_photo"
-        className="flex-1 w-full h-[31.25rem] object-cover"
+        className="flex-1 w-full h-[31.25rem] object-contain img_animation"
       />
     </div>
   );

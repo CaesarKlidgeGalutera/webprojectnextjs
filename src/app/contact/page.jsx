@@ -10,7 +10,7 @@ const Contact = () => {
       <div className="flex gap-24 items-center">
         <div className="flex-1 h-[31.25rem] relative">
           {" "}
-          <Image src={contact_photo} alt="contact_photo" fill={true} className="object-contain img_transition" />
+          <Image src={contact_photo} alt="contact_photo" fill={true} className="object-contain img_animation" />
         </div>
         <form className="flex-1 flex flex-col gap-5 text-xl font-bold">
           <input type="text" placeholder="name" />
