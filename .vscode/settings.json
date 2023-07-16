@@ -1,3 +1,3 @@
 {
-  "conventionalCommits.scopes": ["nav", "api"]
+  "conventionalCommits.scopes": ["nav", "api", "db"]
 }
