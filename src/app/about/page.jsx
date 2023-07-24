@@ -1,6 +1,11 @@
 import Image from "next/image";
 import about_photo from "public/about_photo.jpeg";
 
+export const metadata = {
+  title: "About",
+  description: "This is About Page",
+};
+
 const About = () => {
   return (
     <div className="">
@@ -53,9 +58,13 @@ const About = () => {
             <br />
             <br /> - Mobile Apps
           </p>
-            <a type="button" href="/contact" className="p-3 cursor-pointer bg-primary-green border-none rounded text-white w-max">
-              Contact
-            </a>
+          <a
+            type="button"
+            href="/contact"
+            className="p-3 cursor-pointer bg-primary-green border-none rounded text-white w-max"
+          >
+            Contact
+          </a>
         </div>
       </div>
     </div>

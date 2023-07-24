@@ -19,13 +19,13 @@ const Blog = async () => {
     <div>
       {data.map((item) => (
         <Link
-          href="/blog/testId"
+          href={`/blog/${item._id}`}
           className="flex items-center gap-12 mb-12"
           key={item.id}
         >
           <div className="">
             <Image
-              src="https://images.pexels.com/photos/3130810/pexels-photo-3130810.jpeg"
+              src={item.img}
               alt=""
               width={400}
               height={250}
@@ -34,7 +34,7 @@ const Blog = async () => {
           </div>
           <div>
             <h1 className="mb-2 text-base font-bold">{item.title}</h1>
-            <p className="text-lg text-gray-300">Desc</p>
+            <p className="text-lg text-gray-300">{item.desc}</p>
           </div>
         </Link>
       ))}
